@@ -1,0 +1,110 @@
+body {
+  background-color: #160f30;
+}
+
+#gradient-wrap {
+  width: 80%;
+  height: 50%;;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right top, #241663, #3e1a6e, #561d79, #6e2082, #86238a, #a82a84, #c3387d, #d94c76, #e9756b, #ed9e6f, #ebc487, #eae7af);
+}
+
+#main-content {
+  width: 99%;
+  height: 98%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #160f30;
+  text-align: center;
+}
+
+#main-icon {
+  color: white;
+  font-size: 4rem;
+  display: inline-block;
+}
+
+#main-head {
+  display: inline-block;
+  font-family: 'Courgette', cursive;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(left, #d94c76, #ed9e6f, #eae7af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2%;
+  padding-right: 2%;
+}
+
+#main-head-border-bottom-gradient {
+  height: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  background-image: linear-gradient(to right, #241663, #3e1a6e, #561d79, #6e2082, #86238a, #a82a84, #c3387d, #d94c76, #e9756b, #ed9e6f, #ebc487, #eae7af);
+}
+
+.main-head-content {
+  color: white;
+  font-family: 'Courgette', cursive;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 10%;
+}
+
+#to-survey-button {
+  border: white solid 2px;
+  background-image: linear-gradient(to right, #241663, #6e2082, #a82a84);
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 300px;
+  height: 70px;;
+}
+
+#to-survey-button-text {
+  color: white;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#to-survey-button:hover,
+#to-survey-button:focus {
+  cursor: pointer;
+  border: #ed9e6f solid 2px;
+}
+
+#to-survey-button:active {
+  cursor: pointer;
+  border: #eae7af solid 2px;
+  background-image: linear-gradient(to right, #241663, #6e2082);
+}
+
+#links {
+  color: white;
+  text-decoration: none;
+}
+
+#links:hover,
+#links:focus {
+  text-decoration: underline;
+}
+
+#links:active {
+  text-decoration: underline;
+  color: #a82a84;
+}
+
+#links-paragraph {
+  color: #a82a84;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  font-family: sans-serif;
+}
