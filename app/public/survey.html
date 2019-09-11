@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="./survey.css">
   <script src="https://kit.fontawesome.com/3a51ec4eb7.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <title>FriendFinder - Survey</title>
 </head>
 
@@ -19,15 +21,130 @@
       <h2 class="question-title">About You</h2>
       <form>
         Name (Required)<br>
-        <input type="text"><br>
+        <input id="new-name" type="text"><br>
         Link to Photo Image (Required)<br>
-        <input type="text">
+        <input id="new-image" type="text">
       </form>
     </div>
     <div class="survey-divider"></div>
     <h2 class="question-title">Question 1</h2>
-
+    <p class="question-text">Your mind is always buzzing with unexplored ideas and plans.</p>
+    <select id="q-1">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 2</h2>
+    <p class="question-text">Generally speaking, you rely more on your experience than your imagination.</p>
+    <select id="q-2">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 3</h2>
+    <p class="question-text">You find it easy to stay relaxed and focused even when there is some pressure.</p>
+    <select id="q-3">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 4</h2>
+    <p class="question-text">You rarely do something just out of sheer curiosity.</p>
+    <select id="q-4">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 5</h2>
+    <p class="question-text">People can rarely upset you.</p>
+    <select id="q-5">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 6</h2>
+    <p class="question-text">It is often difficult for you to relate to other people’s feelings.</p>
+    <select id="q-6">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 7</h2>
+    <p class="question-text">In a discussion, truth should be more important than people’s sensitivities.</p>
+    <select id="q-7">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 8</h2>
+    <p class="question-text">You rarely get carried away by fantasies and ideas.</p>
+    <select id="q-8">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 9</h2>
+    <p class="question-text">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+    <select id="q-9">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <h2 class="question-title">Question 10</h2>
+    <p class="question-text">You feel more energetic after spending time with a group of people.</p>
+    <select id="q-10">
+      <option value="" disabled selected>Select an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <div class="survey-divider"></div>
+    <div id="submit-button">
+      <h3 id="submit-button-text"><i class="fas fa-check-square"></i></i> Submit</h3>
+    </div>
   </div>
+  <div id="links-paragraph-div">
+    <p id="links-paragraph"><a id="links" href="#">API Friends List</a> | <a id="links" href="#">GitHub Repo</a></p>
+  </div>
+  <script src="../data/friends.js"></script>
 </body>
 
 </html>

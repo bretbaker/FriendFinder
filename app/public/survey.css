@@ -4,24 +4,29 @@ body {
 
 form {
   font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 input {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 500px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+select {
+  font-family: sans-serif;
+  font-size: 1.25rem;
 }
 
 #survey-container {
+  /* height: 100vh; */
   width: 960px;
   color: white;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: -5px -10px 10px #c3387d, 5px -10px 10px #c3387d;
+  margin: 20px auto;
+  padding: 30px 20px;
+  box-shadow: -5px 0 10px #c3387d, 5px 0 10px #c3387d;
+  border-radius: 5px;
 }
 
 
@@ -39,7 +44,71 @@ input {
 }
 
 .question-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Courgette', cursive;
   margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#submit-button {
+  border: white solid 2px;
+  background-image: linear-gradient(to right, #241663, #6e2082, #a82a84);
+  text-align: left;
+  width: 300px;
+  height: 70px;;
+  text-decoration: none;
+}
+
+#submit-button-text {
+  color: white;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin-top: 23px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#submit-button:hover,
+#submit-button:focus {
+  cursor: pointer;
+  border: #ed9e6f solid 2px;
+  text-decoration: none;
+}
+
+#submit-button:active {
+  cursor: pointer;
+  border: #eae7af solid 2px;
+  background-image: linear-gradient(to right, #241663, #6e2082);
+  text-decoration: none;
+}
+
+#links-paragraph-div {
+  width: 955px;
+  margin: 10px auto;
+}
+
+#links {
+  color: white;
+  text-decoration: none;
+}
+
+#links:hover,
+#links:focus {
+  text-decoration: underline;
+}
+
+#links:active {
+  text-decoration: underline;
+  color: #a82a84;
+}
+
+#links-paragraph {
+  color: #a82a84;
+  font-family: sans-serif;
 }
