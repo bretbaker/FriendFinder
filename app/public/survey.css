@@ -19,6 +19,10 @@ select {
   font-size: 1.25rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 #survey-container {
   /* height: 100vh; */
   width: 960px;
@@ -61,7 +65,7 @@ select {
   background-image: linear-gradient(to right, #241663, #6e2082, #a82a84);
   text-align: left;
   width: 300px;
-  height: 70px;;
+  height: 70px;
   text-decoration: none;
 }
 
@@ -111,4 +115,82 @@ select {
 #links-paragraph {
   color: #a82a84;
   font-family: sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #160f30;
+  color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  box-shadow: -5px 0 10px #c3387d, 5px 0 10px #c3387d;
+  border-radius: 5px;
+  width: 60%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+#modal-head {
+  font-size: 3rem;
+  font-family: 'Courgette', cursive;
+  margin: 30px;
+}
+
+#modal-message {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin: 30px;
+}
+
+#modal-img {
+  width: 300px;
+  border: solid 2px #160f30;
+  box-shadow: -5px 0 10px #c3387d, 5px 0 10px #c3387d;
+  margin: 60px;
+  border-radius: 5px;
+}
+
+#home-button {
+  border: white solid 2px;
+  background-image: linear-gradient(to right, #241663, #6e2082, #a82a84);
+  text-align: center;
+  margin: 30px auto;
+  width: 300px;
+  height: 70px;
+  text-decoration: none;
+}
+
+#home-button-text {
+  color: white;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin-top: 23px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#home-button:hover,
+#home-button:focus {
+  cursor: pointer;
+  border: #ed9e6f solid 2px;
+  text-decoration: none;
+}
+
+#home-button:active {
+  cursor: pointer;
+  border: #eae7af solid 2px;
+  background-image: linear-gradient(to right, #241663, #6e2082);
+  text-decoration: none;
 }

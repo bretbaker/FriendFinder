@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!-- Survey Head -->
   <div id="survey-container">
     <h1 id="survey-header">Survey Questions</h1>
     <div class="survey-divider"></div>
@@ -27,6 +28,7 @@
       </form>
     </div>
     <div class="survey-divider"></div>
+    <!-- Question 1 -->
     <h2 class="question-title">Question 1</h2>
     <p class="question-text">Your mind is always buzzing with unexplored ideas and plans.</p>
     <select id="q-1">
@@ -38,6 +40,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 2 -->
     <h2 class="question-title">Question 2</h2>
     <p class="question-text">Generally speaking, you rely more on your experience than your imagination.</p>
     <select id="q-2">
@@ -49,6 +52,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 3 -->
     <h2 class="question-title">Question 3</h2>
     <p class="question-text">You find it easy to stay relaxed and focused even when there is some pressure.</p>
     <select id="q-3">
@@ -60,6 +64,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 4 -->
     <h2 class="question-title">Question 4</h2>
     <p class="question-text">You rarely do something just out of sheer curiosity.</p>
     <select id="q-4">
@@ -71,6 +76,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 5 -->
     <h2 class="question-title">Question 5</h2>
     <p class="question-text">People can rarely upset you.</p>
     <select id="q-5">
@@ -82,6 +88,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 6 -->
     <h2 class="question-title">Question 6</h2>
     <p class="question-text">It is often difficult for you to relate to other people’s feelings.</p>
     <select id="q-6">
@@ -93,6 +100,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 7 -->
     <h2 class="question-title">Question 7</h2>
     <p class="question-text">In a discussion, truth should be more important than people’s sensitivities.</p>
     <select id="q-7">
@@ -104,6 +112,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 8 -->
     <h2 class="question-title">Question 8</h2>
     <p class="question-text">You rarely get carried away by fantasies and ideas.</p>
     <select id="q-8">
@@ -115,6 +124,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 9 -->
     <h2 class="question-title">Question 9</h2>
     <p class="question-text">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
     <select id="q-9">
@@ -126,6 +136,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Question 10 -->
     <h2 class="question-title">Question 10</h2>
     <p class="question-text">You feel more energetic after spending time with a group of people.</p>
     <select id="q-10">
@@ -137,12 +148,29 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <div class="survey-divider"></div>
+    <!-- Submit Button -->
     <div id="submit-button">
-      <h3 id="submit-button-text"><i class="fas fa-check-square"></i></i> Submit</h3>
+      <h3 id="submit-button-text"><i class="fas fa-check-square"></i> Submit</h3>
     </div>
   </div>
   <div id="links-paragraph-div">
     <p id="links-paragraph"><a id="links" href="#">API Friends List</a> | <a id="links" href="#">GitHub Repo</a></p>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h1 id="modal-head">Match Found!</h1>
+      <p id="modal-message"></p>
+      <img id="modal-img" src="" alt="">
+      <a href="home.html">
+        <div id="home-button">
+          <h3 id="home-button-text"><i class="fas fa-home"></i> Home</h3>
+        </div>
+      </a>
+    </div>
+  
   </div>
   <script src="../data/friends.js"></script>
 </body>
