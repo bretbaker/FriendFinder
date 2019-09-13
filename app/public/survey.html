@@ -210,6 +210,26 @@
 
             console.log('New friend posted to database!');
 
+            console.log(friendData);
+
+            let diffArr = [];
+            const diffFinder = () => {
+              for (let i = 0; i < friendData.length - 1; i++) {
+                diffArr.push(Math.abs(friendData[friendData.length - 1].scoreSum - friendData[i].scoreSum));
+              }
+            };
+
+            const matchMaker = () => {
+              let matchIndex = diffArr.indexOf(Math.min(...diffArr));
+              $("#modal-message").text(friendData[friendData.length - 1].name + ', you have the greatest compatibility with, ' + friendData[matchIndex].name + '!');
+              $("#modal-img").attr('src', friendData[matchIndex].photo);
+            };
+
+            diffFinder();
+            matchMaker();
+
+            $("#myModal").css('display', 'block');
+
             $("#new-name").val('');
             $("#new-image").val('');
             $("#q-1").val('');
@@ -224,26 +244,6 @@
             $("#q-10").val('');
 
           });
-          
-          console.log(friendData);
-
-          let diffArr = [];
-          const diffFinder = () => {
-            for (let i = 0; i < friendData.length - 1; i++) {
-              diffArr.push(Math.abs(friendData[friendData.length - 1].scoreSum - friendData[i].scoreSum));
-            }
-          };
-
-          const matchMaker = () => {
-            let matchIndex = diffArr.indexOf(Math.min(...diffArr));
-            $("#modal-message").text(friendData[friendData.length - 1].name + ', you have the greatest compatibility with, ' + friendData[matchIndex].name + '!');
-            $("#modal-img").attr('src', friendData[matchIndex].photo);
-          };
-
-          diffFinder();
-          matchMaker();
-
-          $("#myModal").css('display', 'block');
 
         }));
 
