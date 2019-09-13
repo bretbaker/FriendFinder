@@ -97,17 +97,17 @@ a {
   margin: 10px auto;
 }
 
-#links {
+.links {
   color: white;
   text-decoration: none;
 }
 
-#links:hover,
-#links:focus {
+.links:hover,
+.links:focus {
   text-decoration: underline;
 }
 
-#links:active {
+.links:active {
   text-decoration: underline;
   color: #a82a84;
 }
@@ -138,27 +138,27 @@ a {
   padding: 20px;
   box-shadow: -5px 0 10px #c3387d, 5px 0 10px #c3387d;
   border-radius: 5px;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 400px; /* Could be more or less, depending on screen size */
   text-align: center;
 }
 
 #modal-head {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Courgette', cursive;
-  margin: 30px;
+  margin: 20px;
 }
 
 #modal-message {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: sans-serif;
-  margin: 30px;
+  margin: 20px;
 }
 
 #modal-img {
-  width: 300px;
+  width: 200px;
   border: solid 2px #160f30;
   box-shadow: -5px 0 10px #c3387d, 5px 0 10px #c3387d;
-  margin: 60px;
+  margin: 50px;
   border-radius: 5px;
 }
 
@@ -166,9 +166,10 @@ a {
   border: white solid 2px;
   background-image: linear-gradient(to right, #241663, #6e2082, #a82a84);
   text-align: center;
-  margin: 30px auto;
-  width: 300px;
-  height: 70px;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  width: 170px;
+  height: 40px;
   text-decoration: none;
 }
 
@@ -176,8 +177,8 @@ a {
   color: white;
   font-family: 'Courgette', cursive;
   text-align: center;
-  margin-top: 23px;
-  font-size: 1.5rem;
+  margin-top: 10px;
+  font-size: 1.25rem;
   text-decoration: none;
 }
 

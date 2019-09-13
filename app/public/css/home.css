@@ -103,17 +103,17 @@ a {
   margin: 10px auto;
 }
 
-#links {
+.links {
   color: white;
   text-decoration: none;
 }
 
-#links:hover,
-#links:focus {
+.links:hover,
+.links:focus {
   text-decoration: underline;
 }
 
-#links:active {
+.links:active {
   text-decoration: underline;
   color: #a82a84;
 }
